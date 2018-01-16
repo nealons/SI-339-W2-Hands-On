@@ -1,0 +1,16 @@
+body{
+	margin: 0;
+	padding: 0
+	outline: 0;
+}
+
+h1 {
+	margin: 0;
+}
+.title{
+	background: #ddd;
+	text-align: center;
+	line-height: 100vh;
+	font-family: 'Georgia', sans-serif;
+	font-size: 150px;
+}
