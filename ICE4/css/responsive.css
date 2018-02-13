@@ -13,20 +13,20 @@
 	margin: 0;
 	text-align: center;
 	padding: .25em .75em;}
-.logo img{
-	height: 3em;}
+
+
 
 img.resp-img-3 {
 	float: left;
 	display: inline-block;
-	width: 25rem;
+	width: 45%;
 	padding-bottom: 10px;
 	box-shadow: none !important;
 }
 img.resp-img-4{
 	float: right;
 	display: inline-block;
-	width: 25rem;
+	width: 45%;
 	padding-bottom: 10px;
 	box-shadow: none !important;
 }
@@ -57,44 +57,51 @@ img.resp-img-1 {
 	float: left;
 	display: inline-block;
 	width: 47%;
+	height: 40%;
 }
 img.resp-img-2{
 	float: right;
 	display: inline-block;
 	width: 47%;
+	height: 40%;
+
 }
 img.resp-img-3{
 	float: left;
 	display: inline-block;
-	width: 22.5%;
-	height: 355px;
+	width: 22%;
 	padding-left: .7rem;
-	padding-right: .7rem;
+	padding-right: 1rem;
 	clear: both;
 }
 img.resp-img-4{
 	float: left;
-	height: 355px;
 	display: inline-block;
 	padding-left: .7rem;
 	padding-right: .7rem;
-	width: 22.5%;
+	width: 22%;
 }
 img.resp-img-5{
 	float: right;
 	display: inline-block;
 	width: 47%;
-	height: 50%
+	height: 40%;
+
 }
 img.resp-img-6{
 	float: left;
 	display: inline-block;
+	padding-top: 1.3rem;
 	width: 47%;
+	height: 40%;
+
 }
 img.resp-img-7{
 	float: right;
 	display: inline-block;
 	width: 47%;
+	height: 40%;
+
 }
 }
 }
