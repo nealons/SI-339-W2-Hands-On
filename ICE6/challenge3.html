@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 3</title>
+    <script type="text/javascript">
+    function checkForm(){
+    	var isRadio1Checked = document.getElementById("opt-straw").checked;
+      var isRadio2Checked = document.getElementById("opt-blue").checked;
+      if((!isRadio1Checked && !isRadio2Checked) || (isRadio1Checked && isRadio2Checked)){
+        console.log("Fail!")
+        return false;
+    }
+    else{
+      console.log("Success!")
+      return true;
+    }
+    </script>
+</head>
+<body>
+  <h1> Challenge 3</h1>
+	 <form action="challenge4.html" 
+        onsubmit= "return checkForm()">
+      <fieldset>
+        <legend>Radio buttons and Check Boxes</legend>
+        <div>
+          What's your favorite berry?: 
+          <label>
+            <input type="radio" name = "fruit" value = "s" id="opt-straw"> Strawberries
+          </label>
+          <label>
+            <input type="radio" name = "fruit" value = "b" id="opt-blue"> Blueberries
+        </label>
+      </div>
+  </fieldset>
+  <input type="submit" value="Pick your fruit!">
+
+  <script>
+ //   var radios = document.querySelectorALL("input[type = 'radio']");
+//    radios.forEach(function(elem){
+ //     elem.setAttribute("name","fruits");
+  //  })
+ //   for( var i = 0; i < radios.length; i++) {
+ //     radios[i].setAttribute("name", "fruits");
+//    }
+ // //  var isChecked = false;
+   // radios.forEach(function(elem){
+  //    console.log(elem.checked);
+  //    if(elem.checked){
+  //      isChecked = true;
+  //    }
+  //  });
+//  var isRadio1Checked = 
+
+  </script>
+</form>
+</body>
