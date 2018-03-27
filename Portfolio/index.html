@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang= 'en'>
+<head>
+	<title>Nealon's Portfolio Site</title>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content= "width=device-width,
+	initial-scale=1, shrink-to-fit=no">
+	<link rel= "stylesheet" type = "text/css" href="css/style.css">
+	<link rel= "stylesheet" type = "text/css" href="css/main.css">
+	<script type="type/javascript">
+   	$(document).ready(function(){ 
+        $(".preview" ).on('focus mouseover',function() {
+       	$("#image").text($(this).attr("alt"));
+        $("#image").css('background-image', 'url("' + $(this).attr("src") + '")');
+        	})
+
+        $(".preview" ).on('blur mouseleave',function() {
+        $("#image").text("Hover over an image below");
+        $("#image").css('background-image', '');
+      })
+    });	
+	</script>
+
+</head>
+
+<body class="body">
+	<header>
+		<nav id = "top-nav" class = "top-nav">
+			<div class="logo">
+			<h3><a href = "index.html" style="text-decoration: none; color: black; font-family: Palatino;">Nealon Suthersan</a></h3>
+			</div>
+			<ul>
+				<li><a href = "knowbility.html">Knowbility Challenge</a></li>
+				<li><a href="https://instagram.com/boozybrownsugar" style="text-decoration: none;">Instagram</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="main-content" class="main-content main-content-craft">
+		<section class="pictures">
+		<div class = "container">
+			<img class = 'dog pic' src = "pics/dog.JPG" alt = "picture of dog">
+			<div class ="overlay"><div class ="text">This is a picture of my dog!</div></div></div>
+			<a href = "https://www.linkedin.com/in/nealon-suthersan-68aa55142/">
+			<img class = 'me pic' src = "pics/me.JPG" alt = 'picture of me'>
+			</a>
+	</section>
+</div>
+
+	<footer>
+		<a href="https://www.linkedin.com/in/nealon-suthersan-68aa55142/"></a> 
+		<a href="https://www.facebook.com/kneelin1"></a>
+		<p>Thank you for checking out my site!</p>
+
+	</footer>
