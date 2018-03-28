@@ -40,29 +40,34 @@ h1 {
 
 .row {
     margin: 8px -16px;
+    padding:10px;
 }
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
-    padding: 8px;
+    padding: 5px;
 }
 
 /* The grid: Four equal columns that floats next to each other */
 .column {
     float: left;
     width: 25%;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* Style the images inside the grid */
 .column img {
     opacity: 0.8; 
     cursor: pointer; 
+    overflow-y:scroll;
+    overflow-x:hidden;
 }
 
 .column img:hover {
     opacity: 1;
+    overflow-y:scroll;
+    overflow-x:hidden;
 }
 
 /* Clear floats after the columns */
