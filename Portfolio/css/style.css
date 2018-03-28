@@ -16,36 +16,30 @@ html, body{
 	z-index: -999;
 	color: #E3AD02;
 }
-.container{
-	position: relative;
+
+
+.grid{
+	display: flex;
+	padding-top: 30px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+p{
+	text-align: center;
+	margin: 15px;
+}
+img.dog{
+	width: 100%;
+
+}
+img.me{
+	width: 100%;
+
 }
 
-.pic:hover .overlay {
-  opacity: 1;
-}
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
+
 
 a.skip:active, a.skip:focus, a.skip:hover {
     position:fixed;
@@ -86,6 +80,7 @@ h2{
 }
 h3{
 	font-size: 1.17em;
+	text-align: center;
 }
 h4{
 	font-size: 1.12em;
@@ -98,8 +93,10 @@ h6{
 	font-size: .75em;
 }
 .main-content{
-	flex: 1 0 auto;
 	margin-top: 110px;
+}
+.main-content h3{
+	margin-top: 100px;
 }
 .about, .work, .crafts, .contact{
 	margin: auto;
@@ -111,7 +108,6 @@ h6{
 header{
 	font-family: Georgia, sans-serif;
 	font-size: 105%;
-    box-shadow: 0px 18px 26px 1px rgba(141, 141, 139, .75);
     width: 100%;
     position: fixed;
 }
@@ -188,18 +184,7 @@ header{
 	padding: .5em .25em 0;
 	height: 25px;
 }
-img.dog{
-	display: inline-block;
-	height: 450px;
-	width: 450px;
-	float: left;}
-img.me{
-	display: inline-block;
-	height: 450px;
-	width:450px;
-	text-align: center;
-	float: right;
-}
+
 footer{
 	color: black;
 	font-size: .85em;
@@ -224,7 +209,6 @@ footer p{
 	max-width: 300px;
 	margin: auto;
 	padding: 1.5em;
-	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;
 }
 
 
