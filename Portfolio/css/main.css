@@ -2,17 +2,18 @@
 
 .top-nav ul li{
 	display: inline-block;
-	padding-top: 10px;}
+	padding-top: 10px;
+}
 
 .top-nav ul{
-	text-align: center;}
-
+	text-align: center;
+}
 
 .logo{
 	background-color: #211D24; /*CHANGE*/
 	margin: 0;
 	text-align: center;
-	padding: .25em .50em;
+	padding: .1em .10em;
 	color: #1a1b29;
 }
 
@@ -47,7 +48,30 @@ img.eggs{
 
 }
 
+.responsive {
+        width: 100%;
+    }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+}
+
+
 @media only screen and (min-width: 1000px) {
+
+.responsive {
+        width: 50%;
+    }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 .top-nav ul li{
 	display: inline-block;

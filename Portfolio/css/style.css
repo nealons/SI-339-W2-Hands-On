@@ -17,6 +17,86 @@ html, body{
 	color: #E3AD02;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
 
 .grid{
 	display: flex;
@@ -31,10 +111,14 @@ p{
 	margin: 15px;
 }
 img.dog{
+	padding-top: 50px;
+	padding-right:4px;
 	width: 100%;
 
 }
 img.me{
+	padding-top: 50px;
+	padding-left:4px;
 	width: 100%;
 
 }
@@ -58,7 +142,7 @@ html, body, header{
 }
 header, .logo {
 	background-color: #e3e3e3;
-	color: black; 
+	color: black;
 }
 body{
 	display: flex;
@@ -120,7 +204,7 @@ header{
 	display: block;
 }
 .top-nav ul li, .menu-icon{
-/*	border-top: 1px solid black; /*CHANGE*/
+	border-top: 1px solid black; /*CHANGE*/
 }
 .top-nav ul li a{
 	font-size: 1em;
@@ -171,7 +255,7 @@ header{
 	background-color: #e3e3e3; /*CHANGE*/
 	margin: 0;
 	text-align: center;
-	padding: .25em .75em;
+	padding: .1em .1em;
 	color: #1a1b29;
 
 }
@@ -185,10 +269,10 @@ header{
 	height: 25px;
 }
 
-footer{
-	color: black;
-	font-size: .85em;
-	text-align: center;
+footer {
+ position: fixed;
+ bottom: 0;
+ width: 100%;
 }
 footer p{
 	padding-top: .5em;

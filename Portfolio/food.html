@@ -24,20 +24,53 @@
 	</header>
 	<div id="main-content" class="main-content main-content-craft">
 		<h3>One of my biggest hobbies is cooking and photographing food! Here's a couple examples!</h3>
-		<section class = "crafts">
-			<div class = "photo-grid">
-				<div class = "photo-cell">
-					<img class="breakfast" src = "pics/breakfast.JPG" alt = "picture of breakfast">
-				</div>
-				<div class = "photo-cell">
-					<img class="salad" src = "pics/salad.JPG" alt = "picture of salad">
-				</div>
-				<div class = "photo-cell">
-					<img class="pasta" src = "pics/pasta.JPG" alt = "picture of pasta">
-				</div>
-				<div class = "photo-cell">
-					<img class="eggs" src = "pics/eggs.JPG" alt = "picture of eggs">
-				</div>
+		<div class="row">
+		  <div class="column">
+		    <div class="content">
+		    <a target="_blank" href="pics/breakfast.JPG">
+		      <img src="pics/breakfast.JPG" alt="Breakfast" style="width:100%"></a>
+		      <h3>This is a picture of breakfast!</h3>
+		      <p>I took this in Seattle, WA</p>
+		    </div>
+		  </div>
+		  <div class="column">
+		    <div class="content">
+		    <a target="_blank" href="pics/salad.JPG">
+		      <img src="pics/salad.JPG" alt="Salad" style="width:100%"></a>
+		      <h3>This is a picture of salad I made!</h3>
+		      <p>I took this in my house</p>
+		    </div>
+		  </div>
+		  <div class="column">
+		    <div class="content">
+		 	<a target="_blank" href="pics/pasta.JPG">
+		      <img src="pics/pasta.JPG" alt="Pasta" style="width:100%"></a>
+		      <h3>This is a picture of pasta I made!</h3>
+		      <p>I took this in my apartment at school</p>
+		    </div>
+		  </div>
+		  <div class="column">
+		    <div class="content">
+		   	<a target="_blank" href="pics/leaf.JPG">
+		      <img src="pics/leaf.JPG" alt="Banana Leaf" style="width:100%"></a>
+		      <h3>This is a picture of a vegetarian meal on a banana leaf</h3>
+		      <p>I took this in Chennai, India</p>
+		    </div>
+		  </div>
+		</div>
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+
 
 
 
@@ -46,8 +79,5 @@
 	</div>
 
 <footer>	
-	<a href="https://www.linkedin.com/in/nealon-suthersan-68aa55142/"></a> 
-	<a href="https://www.facebook.com/kneelin1"></a>
 	<p>Thank you for checking out my site!</p>
-
 </footer>
