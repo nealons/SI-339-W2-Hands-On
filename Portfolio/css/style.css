@@ -14,7 +14,7 @@ html, body{
 	height: 1px;
 	overflow: hidden;
 	z-index: -999;
-	color: #E3AD02;
+	color: #EEEEEE;
 }
 
 * {
@@ -22,7 +22,7 @@ html, body{
 }
 
 body {
-    background-color: #f1f1f1;
+    background-color: #EEEEEE;
     padding: 20px;
     font-family: Arial;
 }
@@ -80,10 +80,37 @@ h1 {
 }
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
+.container1 {
     position: relative;
-    display: none;
+    text-align: center;
+    color: white;
+    margin-top: 270px;
 }
+.container2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Palatino, sans-serif;
+    font-size: 25px;
+}
+.centered1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Palatino, sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: #aec6cf;
+}
+
 
 /* Expanding image text */
 #imgtext {
@@ -144,13 +171,13 @@ a.skip:active, a.skip:focus, a.skip:hover {
 	z-index: 999;
 }
 html, body, header{
-    background-color: #008081;
-    font-family: sans-serif; sans-serif;
+    background-color: #9EAEB3; 
+    font-family: Palatino; sans-serif;
     margin: 0;
     padding: 0;
 }
 header, .logo {
-	background-color: #e3e3e3;
+	background-color: #eedad0;
 	color: black;
 	z-index: 1;
 }
@@ -165,11 +192,11 @@ body{
 	flex-direction: column;
 }
 h1, h2, h3, h4, h5, h6{
-	font-family: Georgia, sans-serif;
+	font-family: Palatino, sans-serif;
 	color: #1a1b29;
 }
 p{
-	font-family: Georgia, sans-serif;
+	font-family: Palatino, sans-serif;
 }
 h1{ 
 	font-size: 1.75em;
@@ -208,7 +235,7 @@ h6{
 
 /*-----HEADER & NAVIGATION-----*/
 header{
-	font-family: Georgia, sans-serif;
+	font-family: Palatino, sans-serif;
 	font-size: 105%;
     width: 100%;
     position: fixed;
@@ -217,12 +244,12 @@ header{
 .top-nav ul{
 	list-style-type: none;
 	padding: 0;
-	background-color: #e3e3e3; /*CHANGE*/
+    background-color: #eedad0;
 	margin: 0;
 	display: block;
 }
 .top-nav ul li, .menu-icon{
-	border-top: 1px solid black; /*CHANGE*/
+	border-top: 1px solid #e0a899; /*CHANGE*/
 }
 .top-nav ul li a{
 	font-size: 1em;
@@ -252,7 +279,7 @@ header{
   top: 1px;
 }
 .top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus{
-    background-color: #e3e3e3;
+    background-color: #eedad0;
     color: red;
     font-weight: bold;
 }
@@ -283,7 +310,7 @@ header{
 
 /*-----LOGO-----*/
 .logo{
-	background-color: #e3e3e3; /*CHANGE*/
+    background-color: #eedad0;
 	margin: 0;
 	text-align: center;
 	padding: .5em .5em;
@@ -302,6 +329,7 @@ header{
 
 iframe{
 	position: absolute;
+	margin-top: 5px;
 }
 footer {
  position: relative;
@@ -310,11 +338,11 @@ footer {
  margin-bottom: 0;
 }
 footer p{
-	padding-top: .5em;
-	padding-bottom: .75em;
-	color: teal;
+	padding-top: .1em;
+	padding-bottom: .1em;
+	color: black;
 	text-align: center;
-	background-color: #e3e3e3;
+    background-color: #eedad0;
 	width: 100%;
 	margin-left: 0px;
 
@@ -325,7 +353,7 @@ footer p{
 	margin-top: 250px;
 }
 .home-flag{
-	background-color: #e3e3e3;
+    background-color: #eedad0;
 	color: #DDDDDA;
 	display: flex;
 	flex-direction: column;
