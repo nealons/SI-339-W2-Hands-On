@@ -7,6 +7,28 @@
 	initial-scale=1, shrink-to-fit=no">
 	<link rel= "stylesheet" type = "text/css" href="css/style.css">
 	<link rel= "stylesheet" type = "text/css" href="css/main.css">
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </head>
 
 <body class="body">
@@ -24,9 +46,17 @@
 		</nav>
 	</header>
 	<div id="main-content" class="main-content main-content-craft" >
-	<div class = "wrapper">
-		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5_vHBiHMcGcfY8gyhz1CSZGWfnrA2WQfuWwy1sispzf5dMQ/viewform?embedded=true&amp;bc=transparent" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0" ALLOWTRANSPARENCY="true" style="margin-left: auto;margin-right: auto;">Loading...</iframe>
-	</div>
+
+	<form action="https://formspree.io/nealonsuthersan@gmail.com"
+      method="POST">
+    <p>Name</p>
+    <input type="text" name="name"><br>
+    <p>Email</p>
+    <input type="email" name="_replyto"><br>
+    <p>Reason for Contact</p>
+    <input type="text" name="reason_for_contact"><br>
+    <input type="submit" value="Send" style= "margin-top: 10px">
+	</form>
 	</div>
 
 	<footer>	

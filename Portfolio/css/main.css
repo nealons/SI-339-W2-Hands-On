@@ -13,8 +13,12 @@
 	background-color: #211D24; /*CHANGE*/
 	margin: 0;
 	text-align: center;
-	padding: .1em .10em;
+	padding: 1em .10em;
+
 	color: #1a1b29;
+}
+form{
+    margin-top: -65px;
 }
 .container1 {
     position: relative;
@@ -73,13 +77,13 @@ header, .logo {
 
 }
 img.dog{
-	margin-top: 50px;
+	margin-top: 0px;
 	padding-right:4px;
 	width: 100%;
 
 }
 img.me{
-	margin-top: 50px;
+	margin-top: 0px;
 	padding-left:4px;
 	width: 100%;
 
@@ -89,6 +93,13 @@ img.me{
 
 
 @media only screen and (min-width: 1000px) {
+
+.logo img{
+    margin-top: 10px;
+}
+form{
+    margin-top: -65px;
+}
 
 .responsive {
         width: 50%;
@@ -141,18 +152,18 @@ img.me{
 	display: inline-block;
 	padding-top: 1em;}
 
-.top-nav ul{
-	float: right;}
+
 h1{
 	color: #1a1b29;
 
 }
 
 .logo{
-	display: inline-block;
-	text-align: left;
-	float: left;
-	color: #1a1b29;
+    background-color: #211D24; /*CHANGE*/
+    margin: 0;
+    text-align: center;
+    padding: .1em .10em;
+    color: #1a1b29;
 }
 header, .logo {
     background-color: #eedad0;

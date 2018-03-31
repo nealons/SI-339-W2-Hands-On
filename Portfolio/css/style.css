@@ -21,10 +21,19 @@ html, body{
     box-sizing: border-box;
 }
 
+form{
+    margin-top: -5px;
+}
+
 body {
     background-color: #EEEEEE;
     padding: 20px;
     font-family: Arial;
+}
+
+form{
+    text-align: center;
+
 }
 
 /* Center website */
@@ -176,6 +185,28 @@ html, body, header{
     margin: 0;
     padding: 0;
 }
+
+
+/* The container <div> - needed to position the dropdown content */
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9EAEB3;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
 header, .logo {
 	background-color: #eedad0;
 	color: black;
@@ -249,7 +280,7 @@ header{
 	display: block;
 }
 .top-nav ul li, .menu-icon{
-	border-top: 1px solid #e0a899; /*CHANGE*/
+/*	border-top: 1px solid #e0a899; */
 }
 .top-nav ul li a{
 	font-size: 1em;
@@ -332,14 +363,14 @@ iframe{
 	margin-top: 5px;
 }
 footer {
- position: relative;
+ position: fixed;
  bottom: 0;
  width: 100%;
- margin-bottom: 0;
+
 }
+
 footer p{
 	padding-top: .1em;
-	padding-bottom: .1em;
 	color: black;
 	text-align: center;
     background-color: #eedad0;
