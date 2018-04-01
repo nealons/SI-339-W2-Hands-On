@@ -8,9 +8,7 @@
 	<link rel= "stylesheet" type = "text/css" href="css/style.css">
 	<link rel= "stylesheet" type = "text/css" href="css/main.css">
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
+	function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
@@ -29,6 +27,7 @@ window.onclick = function(event) {
   }
 }
 </script>
+</script>
 </head>
 
 <body class="body">
@@ -38,10 +37,16 @@ window.onclick = function(event) {
 			<a href = "index.html"><img src = "pics/logo.png" alt = "logo" height = "80" width = "80"></a>
 			</div>
 			<ul>
-				<li><a href = "knowbility.html">Knowbility Challenge</a></li>
+				<li><div class = 'dropdown'>
+				<button onclick="myFunction()" class = "dropbtn">Knowbility Challenge</li></button>
+					<div id="myDropdown" class = "dropdown-content">
+						<a href = "tenants.html" class = 'red'>Tenants</a>
+						<a href = "donors.html">Donors</a>
+						<a href = "volunteer.html">Volunteer</a>
+				</div></div>
 				<li><a href = "food.html">Hobbies</a></li>
 				<li><a href="about.html" style="text-decoration: none;">About Me</a></li>
-				<li><a href = "contact.html" style = "color: red">Contact Me</a></li>
+				<li><a href = "contact.html" class = "red">Contact Me</a></li>
 			</ul>
 		</nav>
 	</header>
