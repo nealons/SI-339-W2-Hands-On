@@ -19,7 +19,10 @@
 	color: #1a1b29;
 }
 form{
-    margin-top: -65px;
+    margin-top: 30px;
+}
+p#contact{
+    margin-top: -30px;
 }
 .container1 {
     position: relative;
@@ -99,7 +102,7 @@ img.me{
     margin-top: 10px;
 }
 form{
-    margin-top: -65px;
+    margin-top: 15px;
 }
 
 .responsive {
@@ -123,6 +126,10 @@ form{
     content: "";
     display: table;
     clear: both;
+}
+
+p#contact{
+    margin-top: -35px;
 }
 .container1 {
     position: relative;

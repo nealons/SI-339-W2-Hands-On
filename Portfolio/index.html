@@ -13,10 +13,8 @@
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -47,6 +45,7 @@ window.onclick = function(event) {
 				<li><a href = "food.html">Hobbies</a></li>
 				<li><a href="about.html" style="text-decoration: none;">About Me</a></li>
 				<li><a href = "contact.html">Contact Me</a></li>
+				<li><a href = "news.html">News</a></li>
 			</ul>
 		</nav>
 	</header>

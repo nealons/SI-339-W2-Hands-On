@@ -12,10 +12,12 @@
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
@@ -40,8 +42,9 @@ window.onclick = function(event) {
 						<a href = "volunteer.html">Volunteer</a>
 				</div></div>
 				<li><a href = "food.html">Hobbies</a></li>
-				<li><a href="about.html" style="text-decoration: none;" class = "red">About Me</a></li>
+				<li><a href="about.html" class = "red">About Me</a></li>
 				<li><a href = "contact.html">Contact Me</a></li>
+				<li><a href = "news.html">News</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -60,7 +63,7 @@ window.onclick = function(event) {
 		<p style= "color: black">Welcome to my Portfolio! The picture on the left is a picture of my future Black Lab! Click on it to see where he comes from! The picture on the right is a picture of me! Click on it to learn more about me through my Instagram and feel free to follow!!</p>
 
 	<div class="container2">
-	  <img src="pics/clouds.JPEG" alt="Clouds Picture" style="width:100%";>
+	  <img src="pics/clouds.JPEG" alt="Background picture of clouds behind LinkedIn Link" style="width:100%";>
 	  <a href = "https://www.linkedin.com/in/nealon-suthersan-68aa55142/"><div class="centered1">Here's my linkedin! So you can learn more about me.</div></a>
 	</div>
 </body>
