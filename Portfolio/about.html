@@ -29,18 +29,18 @@ window.onclick = function(event) {
 <header>
 	<nav id = "top-nav" class = "top-nav">
 		<div class="logo">
-		<a href = "index.html"><img src = "pics/logo.png" alt = "Logo with Initials" height = "80" width = "80"></a>
+		<a href = "index.html" tabindex = 0><img src = "pics/logo.png" alt = "logo" height = "80" width = "80"></a>
 		</div>
 		<ul>
 			<li><div class = 'dropdown'>
-			<button onclick="myFunction()" class = "dropbtn">Knowbility Challenge</li></button>
+			<button onclick="myFunction()" class = "dropbtn" tabindex = 1 aria-label = "Knowbility Challenge Drop Down Menu">Knowbility Challenge</li></button>
 				<div id="myDropdown" class = "dropdown-content">
-					<a href = "tenants.html" class = 'red'>Site Renovation</a>
-					<a href = "donors.html">Tenants Page</a>
+					<a href = "tenants.html" tabindex = 2 aria-label = "Site Renovation page">Site Renovation</a>
+					<a href = "donors.html" tabindex = 3 aria-label = "Tenants Page">Tenants Page</a>
 			</div></div>
-			<li><a href = "food.html">Hobbies</a></li>
-			<li><a href="about.html" class = "red">About Me</a></li>
-			<li><a href = "contact.html">Contact Me</a></li>
+			<li><a href = "food.html" tabindex = 4 aria-label = "Hobbies Page">Hobbies</a></li>
+			<li><a href="about.html" style="text-decoration: none;" tabindex = 5 aria-label = "Information about me!" class = "red">About Me</a></li>
+			<li><a href = "contact.html" tabindex = 6 aria-label = "contact page">Contact Me</a></li>
 		</ul>
 	</nav>
 </header>
@@ -49,11 +49,11 @@ window.onclick = function(event) {
 		<section class="pictures">
 		<div class = "grid">
 			<div class = "row">
-				<a href = "http://moonlitlabradors.com/">
+				<a href = "http://moonlitlabradors.com/" tabindex = 7>
 				<img class = 'dog flex' src = "pics/dog.JPG" alt = "This is a picture of my future dog!"></a>
 				</div>
 			<div class = "row">
-				<a href = "https://www.instagram.com/boozybrownsugar/">
+				<a href = "https://www.instagram.com/boozybrownsugar/" tabindex = 8>
 				<img class = 'me flex' src = "pics/me.JPG" alt = 'This is a picture of me! Click it to see my instagram!'></a>
 				</div>
 			</div>
@@ -63,12 +63,12 @@ window.onclick = function(event) {
 
 	<div class="container2">
 	  <img src="pics/clouds.JPEG" alt="Background picture of clouds behind LinkedIn Link" style="width:100%";>
-	  <a href = "https://www.linkedin.com/in/nealon-suthersan-68aa55142/"><div class="centered1">Here's my linkedin! So you can learn more about me.</div></a>
+	  <a href = "https://www.linkedin.com/in/nealon-suthersan-68aa55142/" tabindex =9><div class="centered1">Here's my linkedin! So you can learn more about me.</div></a>
 	</div>
 </body>
 	<footer> Thank you for checking out my site!
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-  	<a href="mailto:nealons@umich.edu?Subject=Hello!"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-    <a href="https://www.instagram.com/boozybrownsugar" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/in/nealon-suthersan-68aa55142/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+  	<a href="mailto:nealons@umich.edu?Subject=Hello!"><i class="fa fa-envelope" aria-hidden="true" tabindex = 10></i></a>
+    <a href="https://www.instagram.com/boozybrownsugar" aria-label="Instagram" tabindex = 11><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/nealon-suthersan-68aa55142/" aria-label="LinkedIn" tabindex = 12><i class="fa fa-linkedin"></i></a>
   </footer>

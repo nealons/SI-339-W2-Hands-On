@@ -17,10 +17,7 @@ html, body{
 	color: #EEEEEE;
 }
 
-.iframe_basket{
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-}
+
 
 
 * {
