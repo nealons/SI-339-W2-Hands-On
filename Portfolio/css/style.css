@@ -17,8 +17,8 @@ html, body{
 	color: #EEEEEE;
 }
 
-.iframe-basket{
-    overflow-y: scroll;
+.iframe_basket{
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
 
