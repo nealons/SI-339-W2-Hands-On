@@ -184,7 +184,9 @@ form{
 	width: 100%;
 }
 .column{
-	width: 25%;
+	width: 20%;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 .clearfix:after {
