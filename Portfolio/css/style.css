@@ -19,6 +19,7 @@ html, body{
 
 
 
+
 * {
     box-sizing: border-box;
 }
@@ -35,7 +36,14 @@ body {
 
 form{
     text-align: center;
+    padding-top: 30px;
+    background: url(../pics/mail3.JPEG);
+    margin: 50px;
 
+}
+form p{
+    font-style: bold;
+    text-align: center;
 }
 
 /* Center website */
@@ -55,15 +63,12 @@ h1 {
 }
 
 /* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-    padding: 5px;
-}
+
 
 /* The grid: Four equal columns that floats next to each other */
 .column {
     float: left;
-    width: 25%;
+    width: 33%;
     padding: 5px;
 }
 
@@ -83,11 +88,110 @@ h1 {
     z-index: -1;
 }
 
+.descript {
+    margin-top: 30px;
+    font-color: red;
+    border-style: round;
+    padding: 10px;
+    border-radius: 50px;
+    background: #C0C0C0 ;
+}
+
+.row1{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 300px;
+    margin-bottom: 50px;
+
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+
+.cell img {
+  display: block;
+}
+
+.column1{
+    display: inline-flex;
+    width: 30%;
+    margin-left: 40px;
+    text-align: center;
+    font-color: red;
+    border-style: round;
+    padding: 10px;
+    border-radius: 50px;
+    background: #C0C0C0 ;
+}
+p.column1{
+    color: red;
+}
+.column2{
+    display: inline-flex;
+    width: 30%;
+    text-align: center;
+    font-color: red;
+    border-style: round;
+    padding: 10px;
+    border-radius: 50px;
+    background: teal ;
+}
+.column3{
+    display: inline-flex;
+    width: 30%;
+    margin-right: 40px;
+    text-align: center;
+    font-color: red;
+    border-style: round;
+    padding: 10px;
+    border-radius: 50px;
+    background: #C0C0C0 ;
+}
+
+
+.descript1{
+    float: left;
+    margin-top: 30px;
+    border: 1px solid black;
+    font-color: red;
+    border-style: round;
+    padding: 10px;
+    border-radius: 50px;
+    background: #C0C0C0 ;
+}
+.descript2{
+    float: right;
+    margin-top: 30px;
+    border: 1px solid black;
+    font-color: red;
+    border-style: round;
+    padding: 10px;
+    border-radius: 50px;
+    background: #C0C0C0 ;
+}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.basket h2{
+    text-align: center;
+}
+.basket2{
+
+}
+.descript{
+    margin-top: 320px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
 }
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
@@ -226,6 +330,10 @@ button.dropbtn {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     text-align: center;
     z-index-1
+}
+.row1 {
+    margin-bottom: 400px;
+    display: flex;
 }
 
 .dropdown-content a {
@@ -403,9 +511,16 @@ iframe{
 	margin-top: 5px;
 }
 footer {
- position: fixed;
+ position: relative;
  bottom: 0;
- width: 100%;
+width: 100%;
+color: black;
+font-color: white;
+text-align: center;
+background-color: #eedad0;
+width: 100%;
+margin-left: 0px;
+position: relative;
 
 }
 
@@ -437,6 +552,7 @@ footer p{
     background-color: #eedad0;
 	width: 100%;
 	margin-left: 0px;
+    position: relative;
 
 }
 

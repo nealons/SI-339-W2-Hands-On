@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang= 'en'>
 <head>
-	<title>Nealon's Portfolio Homepage</title>
+	<title>Nealon's Hobbies</title>
 	<meta charset='UTF-8'>
 	<meta name="viewport" content= "width=device-width,
 	initial-scale=1, shrink-to-fit=no">
 	<link rel= "stylesheet" type = "text/css" href="css/style.css">
 	<link rel= "stylesheet" type = "text/css" href="css/main.css">
-
 <script>
 	function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
+
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -30,7 +31,7 @@ window.onclick = function(event) {
 <header>
 	<nav id = "top-nav" class = "top-nav">
 		<div class="logo">
-		<a href = "index.html"><img src = "pics/logo.png" alt = "logo" height = "80" width = "80"></a>
+		<a href = "index.html"><img src = "pics/logo.png" alt = "Logo with Name Initials" height = "80" width = "80"></a>
 		</div>
 		<ul>
 			<li><div class = 'dropdown'>
@@ -39,19 +40,47 @@ window.onclick = function(event) {
 					<a href = "tenants.html" class = 'red'>Site Renovation</a>
 					<a href = "donors.html">Tenants Page</a>
 			</div></div>
-			<li><a href = "food.html">Hobbies</a></li>
+			<li><a href = "food.html" class = "red">Hobbies</a></li>
 			<li><a href="about.html" style="text-decoration: none;">About Me</a></li>
-			<li><a href = "contact.html">Contact Me</a></li>
+			<li><a href = "contact.html" >Contact Me</a></li>
 		</ul>
 	</nav>
 </header>
 <body class="body">
-
-	<div class="container1">
-	  <img src="pics/maine.JPEG" alt="Background picture of Portland, Maine, landscape" style="width:100%; margin-top: -50px;">
-	  <div class="centered" style="margin-top: -16px;">My name is Nealon. I love cooking, watching TV, traveling, and learning about new and burgeoning ideas!</div>
+	<h3 id = "single" style = "margin-top: 200px;">One of my biggest hobbies is cooking and photographing food! Here's a couple examples!</h3>
+	<div class="container" style = "margin-top: 250px;">
+	  <div class="grid">
+	    <div class="cell">
+	      <img src="pics/breakfast.JPEG" class="responsive-image">
+	    </div>
+	    <div class="cell">
+	      <img src="pics/salad.JPEG" class="responsive-image">
+	    </div>
+	    <div class="cell">
+	      <img src="pics/tomukun.JPEG" class="responsive-image">
+	    </div>
+	    <div class="cell">
+	      <img src="pics/potatoes.JPEG" class="responsive-image">
+	    </div>
+	    <div class="cell">
+	      <img src="pics/rao.JPEG" class="responsive-image">
+	    </div>
+	    <div class="cell">
+	      <img src="pics/chicken.JPEG" class="responsive-image">
+	    </div>
+	    <div class="cell">
+	      <img src="pics/fishcheeks.JPEG" class="responsive-image">
+	    </div>
+	    <div class="cell">
+	      <img src="pics/buvette.JPEG" class="responsive-image">
+	    </div>
+	  </div>
 	</div>
+
+
+
 </body>
+
 	<footer> Thank you for checking out my site!
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
   	<a href="mailto:nealons@umich.edu?Subject=Hello!"><i class="fa fa-envelope" aria-hidden="true"></i></a>
