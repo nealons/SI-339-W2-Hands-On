@@ -28,65 +28,64 @@ window.onclick = function(event) {
 }
 </script>
 </head>
+<body>
 <header>
-	<nav id = "top-nav" class = "top-nav">
-		<div class="logo">
-		<a href = "index.html" tabindex = 0><img src = "pics/logo.png" alt = "logo" height = "80" width = "80"></a>
-		</div>
-		<ul>
-			<li><div class = 'dropdown'>
-			<button onclick="myFunction()" class = "dropbtn" tabindex = 1 aria-label = "Knowbility Challenge Drop Down Menu">Knowbility Challenge</li></button>
-				<div id="myDropdown" class = "dropdown-content">
-					<a href = "tenants.html" tabindex = 2 aria-label = "Site Renovation page">Site Renovation</a>
-					<a href = "donors.html" tabindex = 3 aria-label = "Tenants Page">Tenants Page</a>
-			</div></div>
-			<li><a href = "food.html" class = "red" tabindex = 4 aria-label = "Hobbies Page">Hobbies</a></li>
-			<li><a href="about.html" style="text-decoration: none;" tabindex = 5 aria-label = "Information about me!">About Me</a></li>
-			<li><a href = "contact.html" tabindex = 6 aria-label = "contact page">Contact Me</a></li>
-		</ul>
-	</nav>
+<div class="logo">
+    <a href = "index.html" tabindex = 0><img src = "pics/logo.png" alt = "logo" height = "80" width = "80" aria-label = "logo and home"></a></div>
+<nav class="topnav" id="myTopnav">
+  <a href="about.html" tabindex = 1 aria-label = "about me page">About Me</a>
+  <a href="food.html" class = "active" tabindex = 2 aria-label = "hobbies page">Hobbies</a>
+  <a href="contact.html" tabindex = 3 aria-label = "contact page">Contact Me</a>
+  <div class="dropdown1">
+    <button class="dropbtn1" style = "background: #eedad0" tabindex = 4 aria-label = "Knowbility challenge page">Knowbility Challenge 
+    </button>
+    <div class="dropdown-content1 ">
+      <a href="tenants.html" tabindex = 5 aria-label = "site renovation page">Site Renovation</a>
+      <a href="donors.html" tabindex = 6 aria-label = "tenants page">Tenants Site</a>
+    </div>
+  </div> 
+</nav>
 </header>
-<body class="body">
 
-	<div id="main-content" class="main-content main-content-craft">
+	<div id="main-content" class="main-content main-content-craft" style = "z-index:0;">
 		<h3 id = "single">One of my biggest hobbies is cooking and photographing food! Here's a couple examples!</h3>
-		  <div class="column" id = 'front'>
+		  <div class="column">
 		    <div class="content">
 		    <a target="_blank" href="pics/breakfast.JPEG" tabindex = 7>
-		      <img src="pics/breakfast.JPEG" alt="Breakfast picture" style="width:100%" z = 2></a>
-		      <h3 id = "cap">A great Creole breakfast!</h3>
+		      <img src="pics/breakfast.JPEG" alt="Breakfast picture" style="width:100%"></a>
+		      <h3 class = "cap">A great Creole breakfast!</h3>
 		      <p>Seattle, WA</p>
 		    </div>
 		  </div>
 		  <div class="column">
-		    <div class="content" id = 'front'>
+		    <div class="content">
 		    <a target="_blank" href="pics/salad.JPEG" tabindex = 8>
-		      <img src="pics/salad.JPEG" alt="Salad picture" style="width:100%" z = 2></a>
-		      <h3 id = "cap">This is a salad I made!</h3>
+		      <img src="pics/salad.JPEG" alt="Salad picture" style="width:100%"></a>
+		      <h3 class = "cap">This is a salad I made!</h3>
 		      <p>Nealon's House in Yardley, PA</p>
 		    </div>
 		  </div>
 		  <div class="column">
 		    <div class="content">
 		    <a target="_blank" href="pics/tomukun.JPEG" tabindex = 9>
-		      <img src="pics/tomukun.JPEG" alt="Noodle picture" style="width:100%" z = 2></a>
-		      <h3 id = "cap">My favorite pho in Ann Arbor!</h3>
+		      <img src="pics/tomukun.JPEG" alt="Noodle picture" style="width:100%" ></a>
+		      <h3 class = "cap">My favorite pho in Ann Arbor!</h3>
 		      <p>Tomukun in Ann Arbor, MI</p>
 		    </div>
 		  </div>
 		  <div class="column">
 		    <div class="content">
 		    <a target="_blank" href="pics/potatoes.JPEG" tabindex = 10>
-		      <img src="pics/potatoes.JPEG" alt="Potato picture" style="width:100%" z = 2></a>
-		      <h3 id = "cap">My take on my mom's potatoes!</h3>
+		      <img src="pics/potatoes.JPEG" alt="Potato picture" style="width:100%" ></a>
+		      <h3 class = "cap">My take on my mom's potatoes!</h3>
 		      <p>Nealon's apartment in Ann Arbor, MI</p>
 		    </div>
 		  </div>
 		  <div class="column">
 		    <div class="content">
 		 	<a target="_blank" href="pics/rao.JPEG" tabindex = 11>
-		      <img src="pics/rao.JPEG" alt="Pasta picture" style="width:100%" z = 2></a>
-		      <h3 id = "cap">Some chicken I made at school!</h3>
+		      <img src="pics/rao.JPEG" alt="Pasta picture" style="width:100%"></a>
+		      <h3 class = "cap">Some chicken I made at school!</h3>
 		      <p>Nealon's apartment in Ann Arbor, MI</p>
 		    </div>
 		  </div>
@@ -94,42 +93,43 @@ window.onclick = function(event) {
 		    <div class="content">
 		   	<a target="_blank" href="pics/chicken.JPEG" tabindex = 12>
 		      <img src="pics/chicken.JPEG" alt="Banana Leaf meal picture" style="width:100%"></a>
-		      <h3 id = "cap">My attempt at a roast chicken!</h3>
+		      <h3 class = "cap">My attempt at a roast chicken!</h3>
 		      <p>Nealon's apartment in Ann Arbor, MI</p>
 		    </div>
 		  </div>
 		  <div class="column">
 		    <div class="content">
 		    <a target="_blank" href="pics/pizza.JPEG" tabindex = 13>
-		      <img src="pics/pizza.JPEG" alt="Pizza picture" style="width:100%" z = 2></a>
-		      <h3 id = "cap">Pizza that I made at home!</h3>
+		      <img src="pics/pizza.JPEG" alt="Pizza picture" style="width:100%"></a>
+		      <h3 class = "cap">Pizza that I made at home!</h3>
 		      <p>Nealon's House in Yardley, PA</p>
 		    </div>
 		  </div>
 		  <div class="column">
 		    <div class="content">
 		    <a target="_blank" href="pics/fishcheeks.JPEG" tabindex = 14>
-		      <img src="pics/fishcheeks.JPEG" alt="Thai food picture" style="width:100%" z = 2></a>
-		      <h3 id = "cap">My favorite Thai restaurant!</h3>
+		      <img src="pics/fishcheeks.JPEG" alt="Thai food picture" style="width:100%"></a>
+		      <h3 class = "cap">My favorite Thai restaurant!</h3>
 		      <p>Fish Cheeks in New York, NY</p>
 		    </div>
 		  </div>
 		  <div class="column">
 		    <div class="content">
 		 	<a target="_blank" href="pics/buvette.JPEG" tabindex = 15>
-		      <img src="pics/buvette.JPEG" alt="Buvette brunch picture" style="width:100%" z = 2></a>
-		      <h3 id = "cap">My mom's favorite restaurant!</h3>
+		      <img src="pics/buvette.JPEG" alt="Buvette brunch picture" style="width:100%"></a>
+		      <h3 class = "cap">My mom's favorite restaurant!</h3>
 		      <p>Buvette in New York, NY</p>
 		    </div>
 		</div>
 
 		    </div>
 
-</body>
 
 	<footer> Thank you for checking out my site!
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-  	<a href="mailto:nealons@umich.edu?Subject=Hello!"><i class="fa fa-envelope" tabindex = 16 aria-label="email"></i></a>
+  	<a href="mailto:nealons@umich.edu?Subject=Hello!" tabindex = 16><i class="fa fa-envelope"  aria-label="email"></i></a>
     <a href="https://www.instagram.com/boozybrownsugar" aria-label="Instagram" tabindex = 17><i class="fa fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/in/nealon-suthersan-68aa55142/" aria-label="LinkedIn" tabindex = 18><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.linkedin.com/in/nealon-suthersan-68aa55142/" tabindex = 18 aria-label="LinkedIn"><i class="fa fa-linkedin" ></i></a>
   </footer>
+ </body>
+ </html>

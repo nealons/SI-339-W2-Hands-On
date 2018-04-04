@@ -7,47 +7,25 @@
 	initial-scale=1, shrink-to-fit=no">
 	<link rel= "stylesheet" type = "text/css" href="css/style.css">
 	<link rel= "stylesheet" type = "text/css" href="css/main.css">
-<script>
-	function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-</script>
 </head>
+<body>
 <header>
-	<nav id = "top-nav" class = "top-nav">
-		<div class="logo">
-		<a href = "index.html" tabindex = 0><img src = "pics/logo.png" alt = "logo" height = "80" width = "80"></a>
-		</div>
-		<ul>
-			<li><div class = 'dropdown'>
-			<button onclick="myFunction()" class = "dropbtn" tabindex = 1 aria-label = "Knowbility Challenge Drop Down Menu">Knowbility Challenge</li></button>
-				<div id="myDropdown" class = "dropdown-content">
-					<a href = "tenants.html" tabindex = 2 aria-label = "Site Renovation page">Site Renovation</a>
-					<a href = "donors.html" tabindex = 3 aria-label = "Tenants Page">Tenants Page</a>
-			</div></div>
-			<li><a href = "food.html" tabindex = 4 aria-label = "Hobbies Page">Hobbies</a></li>
-			<li><a href="about.html" style="text-decoration: none;" tabindex = 5 aria-label = "Information about me!">About Me</a></li>
-			<li><a href = "contact.html" tabindex = 6 aria-label = "contact page" class = "red">Contact Me</a></li>
-		</ul>
-	</nav>
+<div class="logo">
+    <a href = "index.html" tabindex = 0><img src = "pics/logo.png" alt = "logo" height = "80" width = "80" aria-label = "logo and home"></a></div>
+<nav class="topnav" id="myTopnav">
+  <a href="about.html" tabindex = 1 aria-label = "about me page">About Me</a>
+  <a href="food.html" tabindex = 2 aria-label = "hobbies page">Hobbies</a>
+  <a href="contact.html" class = "active" tabindex = 3 aria-label = "contact page">Contact Me</a>
+  <div class="dropdown1">
+    <button class="dropbtn1" style = "background: #eedad0" tabindex = 4 aria-label = "Knowbility challenge page">Knowbility Challenge 
+    </button>
+    <div class="dropdown-content1 ">
+      <a href="tenants.html" tabindex = 5 aria-label = "site renovation page">Site Renovation</a>
+      <a href="donors.html" tabindex = 6 aria-label = "tenants page">Tenants Site</a>
+    </div>
+  </div> 
+</nav>
 </header>
-<body class="body">
 
 	<div id="main-content" class="main-content main-content-craft">
 	<p id = "contact" style = 'text-align: center;'>Feel free to contact me if you have any questions or coments!</p>
@@ -57,16 +35,18 @@ window.onclick = function(event) {
     <p>Name</p>
     <input type="text" name="name" tabindex = 7 aria-label = "name"><br>
     <p>Email</p>
-    <input type="email" name="_replyto" tabindex = 8 arial-label = "email"><br>
+    <input type="email" name="_replyto" tabindex = 8 aria-label = "email"><br>
     <p>Reason for Contact</p>
     <input type="text" name="reason_for_contact" tabindex = 9 aria-label = "reason for contact"><br>
     <input type="submit" value="Send" style= "margin-top: 5px; margin-bottom: 200px" tabindex = 10>
 	</form>
 	</div>
-</body>
+
 	<footer> Thank you for checking out my site!
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-  	<a href="mailto:nealons@umich.edu?Subject=Hello!"><i class="fa fa-envelope" aria-label="Email" tabindex = 11></i></a>
+  	<a href="mailto:nealons@umich.edu?Subject=Hello!" tabindex = 11><i class="fa fa-envelope" aria-label="Email"></i></a>
     <a href="https://www.instagram.com/boozybrownsugar" aria-label="Instagram" tabindex = 12><i class="fa fa-instagram"></i></a>
     <a href="https://www.linkedin.com/in/nealon-suthersan-68aa55142/" aria-label="LinkedIn" tabindex = 13><i class="fa fa-linkedin"></i></a>
   </footer>
+</body>
+</html>

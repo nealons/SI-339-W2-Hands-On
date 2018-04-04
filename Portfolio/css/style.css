@@ -296,56 +296,12 @@ html, body, header{
 }
 
 
-button.dropbtn {
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    font-family: Palatino;
-    background-color: #eedad0;
-    padding: .6em .8em;
-    display: inline-block;
 
-}
-
-
-
-.dropbtn:hover, .dropbtn:focus {
-    position: relative;
-}
-
-
-.dropdown {
-    position: relative;
-    display: block;
-    text-align: center;
-
-}
-
-.dropdown-content {
-    display: none;
-    position: relative;
-    background-color: #f1f1f1;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    text-align: center;
-    z-index-1
-}
 .row1 {
     margin-bottom: 400px;
     display: flex;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.dropdown a:hover {
-    background-color: #ddd;
-    color: red;
-}
 
 .show{
     display:block;
@@ -357,6 +313,7 @@ header, .logo {
 	background-color: #eedad0;
 	color: black;
 	z-index: 1;
+    margin-bottom: -10px;
 }
 
 .column{
@@ -396,14 +353,14 @@ h5{
 h6{
 	font-size: .75em;
 }
-#cap h3{
+.cap h3{
 	margin-top: 10px;
 }
 .main-content{
 	margin-top: 250px;
 }
 .main-content h3{
-    margin-top: 40px;
+    margin-top: 60px;
 }
 .about, .work, .crafts, .contact{
 	margin: auto;
@@ -411,63 +368,13 @@ h6{
 	padding-left: 3%;
 }
 
-/*-----HEADER & NAVIGATION-----*/
 header{
 	font-family: Palatino, sans-serif;
 	font-size: 105%;
     width: 100%;
     position: fixed;
 }
-/*mobile-first*/
-.top-nav ul{
-	list-style-type: none;
-	padding: 0;
-    background-color: #eedad0;
-	margin: 0;
-	display: block;
-}
-.top-nav ul li, .menu-icon{
-/*	border-top: 1px solid #e0a899; */
-}
-.top-nav ul li a{
-	font-size: 1em;
-	color: black; /*CHANGE*/
-	text-decoration: none;
-	padding: .5em 1em .5em 1em;
-	display: block;
-	text-align: center;
-}
-.menu-icon a{
-	font-size: 1em;
-	color: black; /*CHANGE*/
-	text-decoration: none;
-	padding: .5em 1em;
-	display: block;
-	text-align: center;
-}
-/*.top-nav ul li a.current-page{
-	color: red;
-	font-weight: bold;
-}*/
-.top-nav ul li a.current-page:before {
-  content: "\27A4  ";
-  color: black;
-  padding-right: 4px;
-  position: relative;
-  top: 1px;
-}
-/*.top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus{
-    background-color: #eedad0;
-    color: red;
-    font-weight: bold;
-}*/
-/*.top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
-    content: "\27A4  ";
-  	color: red;
-  	padding-right: 4px;
-  	position: relative;
-  	top: 1px;
-}*/
+
 
 .wrapper {
     position: relative;
@@ -481,12 +388,7 @@ header{
     width: 100%;
     height: 100%;
 }
-/*implement menu toogle*/
-.top-nav.toggle-open ul{
-	display: block;
-}
 
-/*-----LOGO-----*/
 .logo{
     background-color: #eedad0;
 	margin: 0;
@@ -497,7 +399,7 @@ header{
 }
 
 
-/*-----FOOTER-----*/
+
 
 
 .icon{
@@ -574,6 +476,102 @@ footer p{
 }
 .top-nav ul li .red{
     color: red;
+}
+
+.topnav {
+    overflow: hidden;
+    text-align: center;
+    display: block;
+
+}
+
+.topnav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a.active {
+    background: #996d73;
+}
+button.active{
+    background: #996d73;
+    width:100%;
+
+}
+
+
+.dropdown1 .topnav{
+    text-align: center;
+    color: black;
+    display: block;
+    background-color: #eedad0;
+    width: 30%;
+
+}
+
+.dropdown1 .dropbtn1 {
+    font-size: 17px; 
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: : #eedad0;
+    font-family: Palatino;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+.dropdown-content1 {
+    display: none;
+    text-align: center;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.topnav a{
+    display: block;
+    text-align: center;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.dropbtn1{
+    display: block;
+    text-align: center;
+}
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+button.dropbtn1{
+    text-align: center;
+    display: block;
+}
+
+.topnav a:hover, .dropdown1:hover .dropbtn1 {
+    background-color: #cc919a;
+    color: black;
+
+}
+
+
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+    text-align: center;
 }
 
 

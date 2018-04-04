@@ -1,18 +1,19 @@
 @media only screen and (min-width: 650px) {
 
-.top-nav ul li{
-	display: inline-block;
-	padding-top: 10px;
-}
 
-.top-nav ul{
-	text-align: center;
-}
 .descript{
     margin-top: 190px;
     margin-left: 100px;
     margin-right: 100px;
 
+}
+.topnav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 .row1 {
     margin-top: 200px;
@@ -103,6 +104,7 @@ header, .logo {
 }
 .column{
 	width:33%;
+    z-index: -1;
 
 }
 img.dog{
@@ -115,6 +117,11 @@ img.me{
 	margin-top: 0px;
 	padding-left:4px;
 	width: 100%;
+
+}
+button.active{
+    background: #996d73;
+    width:23%;
 
 }
 
@@ -223,9 +230,6 @@ p#contact{
     background-color: #aec6cf;
 }
 
-.top-nav ul li{
-	display: inline-block;
-	padding-top: 1em;}
 
 
 h1{
@@ -302,6 +306,22 @@ iframe{
     height: 600px;
     width:100%;
     overflow-y: scroll;
+}
+.topnav a{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+button.active{
+    background: #996d73;
+    width:23%;
+
+}
+.dropbtn1{
+    display: inline-block;
 }
 
 }

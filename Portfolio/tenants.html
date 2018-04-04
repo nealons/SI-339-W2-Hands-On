@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang= 'en'>
 <head>
-	<title>Knowbility Challenge</title>
+	<title>Knowbility Site Renovation</title>
 	<meta charset='UTF-8'>
 	<meta name="viewport" content= "width=device-width,
 	initial-scale=1, shrink-to-fit=no">
@@ -29,26 +29,26 @@ window.onclick = function(event) {
 }
 </script>
 </head>
-<header>
-	<nav id = "top-nav" class = "top-nav">
-		<div class="logo">
-		<a href = "index.html" tabindex = 0><img src = "pics/logo.png" alt = "logo" height = "80" width = "80"></a>
-		</div>
-		<ul>
-			<li><div class = 'dropdown'>
-			<button onclick="myFunction()" class = "dropbtn red" tabindex = 1 aria-label = "Knowbility Challenge Drop Down Menu">Knowbility Challenge</li></button>
-				<div id="myDropdown" class = "dropdown-content">
-					<a href = "tenants.html" class = 'red' tabindex = 2 aria-label = "Site Renovation page">Site Renovation</a>
-					<a href = "donors.html" tabindex = 3 aria-label = "Tenants Page">Tenants Page</a>
-			</div></div>
-			<li><a href = "food.html" tabindex = 4 aria-label = "Hobbies Page">Hobbies</a></li>
-			<li><a href="about.html" style="text-decoration: none;" tabindex = 5 aria-label = "Information about me!">About Me</a></li>
-			<li><a href = "contact.html" tabindex = 6 aria-label = "contact page">Contact Me</a></li>
-		</ul>
-	</nav>
-</header>
 <body>
-	<div class = "descript">
+<header>
+<div class="logo">
+    <a href = "index.html" tabindex = 0><img src = "pics/logo.png" alt = "logo" height = "80" width = "80" aria-label = "logo and home"></a></div>
+<nav class="topnav" id="myTopnav">
+  <a href="about.html" tabindex = 1 aria-label = "about me page">About Me</a>
+  <a href="food.html" tabindex = 2 aria-label = "hobbies page">Hobbies</a>
+  <a href="contact.html" tabindex = 3 aria-label = "contact page">Contact Me</a>
+  <div class="dropdown1">
+    <button class="dropbtn1 active" tabindex = 4 aria-label = "Knowbility challenge page">Knowbility Challenge 
+    </button>
+    <div class="dropdown-content1 ">
+      <a href="tenants.html" tabindex = 5 aria-label = "site renovation page">Site Renovation</a>
+      <a href="donors.html" tabindex = 6 aria-label = "tenants page">Tenants Site</a>
+    </div>
+  </div> 
+</nav>
+</header>
+
+	<div class = "descript" style = "margin-top: 300px">
 		<h2>Knowbility Challenge (Austin Tenants Council)</h2>
 		<p>I, along with the rest of Team Julia, decided to partake in the Knowbility Accessibility Challenge that was discussed in lecture. We have had a great time acquianting ourselves with client interactions and accessible web design in a way that not only helps us, but helps a great non-profit organization as well. I am proud of our final product and this that it will greatly help the Austin Tenants Council. I wanted to display the old and new ones here to show you but it wasn't loading properly on mobile platforms so I just have the new one here for you. If you want to go to the old site, feel free to check out housing-rights.org.</p>
 	</div>
@@ -59,15 +59,16 @@ window.onclick = function(event) {
 
     <div class = "basket">
       <h2 style = "margin-top: 50px">New Site</h2>
-      <p>If you're viewing this on a mobile device, go to <a href = "https://team-julia.squarespace.com">this link</a>.</p>
+      <p>If you're viewing this on a mobile device or site is not loading, go to <a href = "https://team-julia.squarespace.com">this link</a>.</p>
       <div class = "iframe_basket">
       <iframe src = "https://team-julia.squarespace.com/"></iframe></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
 
-</body>
 	<footer> Thank you for checking out my site!
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
   	<a href="mailto:nealons@umich.edu?Subject=Hello!" tabindex = 7><i class="fa fa-envelope" aria-label="email"></i></a>
     <a href="https://www.instagram.com/boozybrownsugar" aria-label="Instagram" tabindex = 8><i class="fa fa-instagram"></i></a>
     <a href="https://www.linkedin.com/in/nealon-suthersan-68aa55142/" aria-label="LinkedIn" tabindex = 9><i class="fa fa-linkedin"></i></a>
   </footer>
+</body>
+</html>
