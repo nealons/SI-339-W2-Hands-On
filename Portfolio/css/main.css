@@ -21,6 +21,13 @@
 }
 
 
+iframe{
+    position: absolute;
+    margin-top: 5px;
+    height: 600px;
+    width:100%;
+}
+
 .logo{
 	background-color: #211D24; /*CHANGE*/
 	margin: 0;
