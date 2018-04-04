@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang= 'en'>
+<head>
+	<title>Nealon's Hobbies</title>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content= "width=device-width,
+	initial-scale=1, shrink-to-fit=no">
+	<link rel= "stylesheet" type = "text/css" href="css/style.css">
+	<link rel= "stylesheet" type = "text/css" href="css/main.css">
+<script>
+	function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</head>
+<header>
+	<nav id = "top-nav" class = "top-nav">
+		<div class="logo">
+		<a href = "index.html"><img src = "pics/logo.png" alt = "Logo with Name Initials" height = "80" width = "80"></a>
+		</div>
+		<ul>
+			<li><div class = 'dropdown'>
+			<button onclick="myFunction()" class = "dropbtn">Knowbility Challenge</li></button>
+				<div id="myDropdown" class = "dropdown-content">
+					<a href = "tenants.html" class = 'red'>Site Renovation</a>
+					<a href = "donors.html">Tenants Page</a>
+			</div></div>
+			<li><a href = "food.html" class = "red">Hobbies</a></li>
+			<li><a href="about.html" style="text-decoration: none;">About Me</a></li>
+			<li><a href = "contact.html" >Contact Me</a></li>
+		</ul>
+	</nav>
+</header>
+<body class="body">
+
+	<div id="main-content" class="main-content main-content-craft">
+		<h3 id = "single">One of my biggest hobbies is cooking and photographing food! Here's a couple examples!</h3>
+		  <div class="column" id = 'front'>
+		    <div class="content">
+		    <a target="_blank" href="pics/breakfast.JPEG">
+		      <img src="pics/breakfast.JPEG" alt="Breakfast" style="width:100%" z = 2></a>
+		      <h3 id = "cap">A great Creole breakfast!</h3>
+		      <p>Seattle, WA</p>
+		    </div>
+		  </div>
+		  <div class="column">
+		    <div class="content" id = 'front'>
+		    <a target="_blank" href="pics/salad.JPEG">
+		      <img src="pics/salad.JPEG" alt="Salad" style="width:100%" z = 2></a>
+		      <h3 id = "cap">This is a salad I made!</h3>
+		      <p>Nealon's House in Yardley, PA</p>
+		    </div>
+		  </div>
+		  <div class="column">
+		    <div class="content">
+		    <a target="_blank" href="pics/tomukun.JPEG">
+		      <img src="pics/tomukun.JPEG" alt="Breakfast" style="width:100%" z = 2></a>
+		      <h3 id = "cap">My favorite pho in Ann Arbor!</h3>
+		      <p>Tomukun in Ann Arbor, MI</p>
+		    </div>
+		  </div>
+		  <div class="column">
+		    <div class="content">
+		    <a target="_blank" href="pics/potatoes.JPEG">
+		      <img src="pics/potatoes.JPEG" alt="Salad" style="width:100%" z = 2></a>
+		      <h3 id = "cap">My take on my mom's potatoes!</h3>
+		      <p>Nealon's apartment in Ann Arbor, MI</p>
+		    </div>
+		  </div>
+		  <div class="column">
+		    <div class="content">
+		 	<a target="_blank" href="pics/rao.JPEG">
+		      <img src="pics/rao.JPEG" alt="Pasta" style="width:100%" z = 2></a>
+		      <h3 id = "cap">Some chicken I made at school!</h3>
+		      <p>Nealon's apartment in Ann Arbor, MI</p>
+		    </div>
+		  </div>
+		  <div class="column">
+		    <div class="content">
+		   	<a target="_blank" href="pics/chicken.JPEG">
+		      <img src="pics/chicken.JPEG" alt="Banana Leaf meal" style="width:100%"></a>
+		      <h3 id = "cap">My attempt at a roast chicken!</h3>
+		      <p>Nealon's apartment in Ann Arbor, MI</p>
+		    </div>
+		  </div>
+		  <div class="column">
+		    <div class="content">
+		    <a target="_blank" href="pics/pizza.JPEG">
+		      <img src="pics/pizza.JPEG" alt="Breakfast" style="width:100%" z = 2></a>
+		      <h3 id = "cap">Pizza that I made at home!</h3>
+		      <p>Nealon's House in Yardley, PA</p>
+		    </div>
+		  </div>
+		  <div class="column">
+		    <div class="content">
+		    <a target="_blank" href="pics/fishcheeks.JPEG">
+		      <img src="pics/fishcheeks.JPEG" alt="Salad" style="width:100%" z = 2></a>
+		      <h3 id = "cap">My favorite Thai restaurant!</h3>
+		      <p>Fish Cheeks in New York, NY</p>
+		    </div>
+		  </div>
+		  </div>
+		  <div class="column">
+		    <div class="content">
+		 	<a target="_blank" href="pics/buvette.JPEG">
+		      <img src="pics/buvette.JPEG" alt="Buvette brunch " style="width:100%" z = 2></a>
+		      <h3 id = "cap">My mom's favorite restaurant!</h3>
+		      <p>Buvette in New York, NY</p>
+		    </div>
+		</div>
+
+		    </div>
+		  </div>
+		</div>
+	</div>
+</body>
+
+	<footer> Thank you for checking out my site!
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  	<a href="mailto:nealons@umich.edu?Subject=Hello!"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/boozybrownsugar" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/nealon-suthersan-68aa55142/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+  </footer>

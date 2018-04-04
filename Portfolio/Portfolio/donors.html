@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang= 'en'>
+<head>
+	<title>Nealon's Portfolio Homepage</title>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content= "width=device-width,
+	initial-scale=1, shrink-to-fit=no">
+	<link rel= "stylesheet" type = "text/css" href="css/style.css">
+	<link rel= "stylesheet" type = "text/css" href="css/main.css">
+
+<script>
+	function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</head>
+	<header>
+		<nav id = "top-nav" class = "top-nav">
+			<div class="logo">
+			<a href = "index.html"><img src = "pics/logo.png" alt = "logo" height = "80" width = "80"></a>
+			</div>
+			<ul>
+				<li><div class = 'dropdown'>
+				<button onclick="myFunction()" class = "dropbtn red">Knowbility Challenge</li></button>
+					<div id="myDropdown" class = "dropdown-content">
+					<a href = "tenants.html" class = 'red'>Site Renovation</a>
+					<a href = "donors.html">Tenants Page</a>
+				</div></div>
+				<li><a href = "food.html">Hobbies</a></li>
+				<li><a href="about.html" style="text-decoration: none;">About Me</a></li>
+				<li><a href = "contact.html" >Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+<body>
+	<div class="row1">
+	  <div class="column1">
+	  <p><i>The Austin Tenants’ Council protects tenants’ rights and educates the community on fair housing. Our vision is to make Texas communities open to all without discrimination and free of landlord-tenant disputes.</i></p></div>
+	  <div class="column2">
+	  <p>When addressing the concerns of the client as to what the most important parts of the website were, they told us they were primarily concerned about tenant outreach and donations.  </p></div>
+	  <div class="column3">
+	  <p>My personal job was to find a way to better organize tenant outreach documents and relay the knowledge from the old site to the new one.</div>
+	</div>
+	<div class = "row2">
+	  <h2 style = "text-align: center; margin-top: 100px">Tenant Page:</h2>
+      <iframe src = "https://team-julia.squarespace.com/renter-concerns/"></iframe></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+</body>
+
+
+	<footer> Thank you for checking out my site!
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  	<a href="mailto:nealons@umich.edu?Subject=Hello!"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/boozybrownsugar" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/nealon-suthersan-68aa55142/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+  </footer>
+
+	</footer>

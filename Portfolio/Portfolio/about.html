@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang= 'en'>
+<head>
+	<title>About Nealon!</title>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content= "width=device-width,
+	initial-scale=1, shrink-to-fit=no">
+	<link rel= "stylesheet" type = "text/css" href="css/style.css">
+	<link rel= "stylesheet" type = "text/css" href="css/main.css">
+<script>
+	function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</head>
+<header>
+	<nav id = "top-nav" class = "top-nav">
+		<div class="logo">
+		<a href = "index.html"><img src = "pics/logo.png" alt = "Logo with Initials" height = "80" width = "80"></a>
+		</div>
+		<ul>
+			<li><div class = 'dropdown'>
+			<button onclick="myFunction()" class = "dropbtn">Knowbility Challenge</li></button>
+				<div id="myDropdown" class = "dropdown-content">
+					<a href = "tenants.html" class = 'red'>Site Renovation</a>
+					<a href = "donors.html">Tenants Page</a>
+			</div></div>
+			<li><a href = "food.html">Hobbies</a></li>
+			<li><a href="about.html" class = "red">About Me</a></li>
+			<li><a href = "contact.html">Contact Me</a></li>
+		</ul>
+	</nav>
+</header>
+<body class="body">
+
+		<section class="pictures">
+		<div class = "grid">
+			<div class = "row">
+				<a href = "http://moonlitlabradors.com/">
+				<img class = 'dog flex' src = "pics/dog.JPG" alt = "This is a picture of my future dog!"></a>
+				</div>
+			<div class = "row">
+				<a href = "https://www.instagram.com/boozybrownsugar/">
+				<img class = 'me flex' src = "pics/me.JPG" alt = 'This is a picture of me! Click it to see my instagram!'></a>
+				</div>
+			</div>
+		</section>
+		<p style= "color: black; margin-left: 60px; margin-right: 60px; border: 1px solid black; border-radius: 50px; padding: 20px; background: url("pics/background.JPEG");">
+			Welcome to my Portfolio! <br><br> Hello! My name is Nealon Aaron Suthersan. I am a student in the BSI program and I have loved my time at the University of Michigan! I have become knowledgeable in the fields of Information Science and Economics and I will use this knowledge in my future career of Technology Consulting! <br><br>The picture on the left above is a picture of my future Black Lab! Click on it to see where he comes from! The picture on the right is a picture of me! Click on it to learn more about me through my Instagram and feel free to follow!!</p>
+
+	<div class="container2">
+	  <img src="pics/clouds.JPEG" alt="Background picture of clouds behind LinkedIn Link" style="width:100%";>
+	  <a href = "https://www.linkedin.com/in/nealon-suthersan-68aa55142/"><div class="centered1">Here's my linkedin! So you can learn more about me.</div></a>
+	</div>
+</body>
+	<footer> Thank you for checking out my site!
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  	<a href="mailto:nealons@umich.edu?Subject=Hello!"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/boozybrownsugar" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/nealon-suthersan-68aa55142/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+  </footer>

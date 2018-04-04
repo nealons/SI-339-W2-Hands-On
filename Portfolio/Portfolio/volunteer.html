@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang= 'en'>
+<head>
+	<title>Nealon's Portfolio Homepage</title>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content= "width=device-width,
+	initial-scale=1, shrink-to-fit=no">
+	<link rel= "stylesheet" type = "text/css" href="css/style.css">
+	<link rel= "stylesheet" type = "text/css" href="css/main.css">
+
+<script>
+	function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</head>
+
+<body class="body">
+	<header>
+		<nav id = "top-nav" class = "top-nav">
+			<div class="logo">
+			<a href = "index.html"><img src = "pics/logo.png" alt = "logo" height = "80" width = "80"></a>
+			</div>
+			<ul>
+				<li><div class = 'dropdown'>
+				<button onclick="myFunction()" class = "dropbtn red">Knowbility Challenge</li></button>
+					<div id="myDropdown" class = "dropdown-content">
+						<a href = "tenants.html" class = 'red'>Tenants</a>
+						<a href = "donors.html">Donors</a>
+						<a href = "volunteer.html">Volunteer</a>
+				</div></div>
+				<li><a href = "food.html">Hobbies</a></li>
+				<li><a href="about.html" style="text-decoration: none;">About Me</a></li>
+				<li><a href = "contact.html" >Contact Me</a></li>
+				<li><a href = "news.html">News</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<footer>	
+		<a href="https://www.linkedin.com/in/nealon-suthersan-68aa55142/"></a> 
+		<a href="https://www.facebook.com/kneelin1"></a>
+		<p>Thank you for checking out my site!</p>
+
+	</footer>
