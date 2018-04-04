@@ -44,6 +44,7 @@ form{
 form p{
     font-style: bold;
     text-align: center;
+    color: red;
 }
 
 /* Center website */
@@ -510,9 +511,10 @@ iframe{
     height: 300px;
     width:100%;
     overflow-y: scroll;
+    display: none;
 }
 footer {
- position: static;
+ position: fixed;
  bottom: 0;
 width: 100%;
 color: black;

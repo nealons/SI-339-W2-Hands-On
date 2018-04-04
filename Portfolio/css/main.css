@@ -20,6 +20,9 @@
     margin-bottom: 250px;
 }
 
+p.basket{
+    display: none;
+}
 
 iframe{
     position: absolute;
@@ -27,6 +30,7 @@ iframe{
     height: 600px;
     width:100%;
     overflow-y: scroll;
+    display: block;
 }
 
 .logo{
