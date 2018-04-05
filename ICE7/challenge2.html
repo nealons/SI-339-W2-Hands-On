@@ -10,17 +10,17 @@
     <script>
     $(document).ready(function(){ 
       $("#useBilling").on("change", function(){
-       if (this.checked) {
-        $("#home").val($("#billing").val());
-        $("#home").prop('disabled', true);
+       if (this.checked){
+          $("#home").val($("#billing").val());
+          $("#home").prop("disabled", true);
         }
-      else{
-        $("#home").val($("").val());
-        $("home").prop('attribute', false);
-      }
+        else{
+          $("#home").val("");
+          $("#home").prop("disabled", false);
+        }
+        });
     });
-});
-    </script>
+</script>
 </head>
 <body>
     <h1>Challenge Two</h1>
