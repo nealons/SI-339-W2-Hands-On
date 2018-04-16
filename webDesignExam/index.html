@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang= 'en'>
+<head>
+	<title>Nealon Final Exam Page</title>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content= "width=device-width,
+	initial-scale=1, shrink-to-fit=no">
+	<link rel= "stylesheet" type = "text/css" href="css/style.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+  	function appear(){
+  		var pic = document.getElementById("hide");
+   		if (pic.style.display === "none") {
+   			pic.style.display = "block";
+   		}}
+  	function disappear(){
+  		var pic = document.getElementById("hide");
+   		if (pic.style.display === "block") {
+   			pic.style.display = "none";
+   		}}
+</script>
+</head>
+<body>
+
+<header>
+	<h1>Nealon Suthersan</h1>
+</header>
+	<div class = "flex-row">
+		<div class = "flex-column" id = "hide" style = "display: none;">
+			<img src = 'images/examPic.jpg' alt = "A Photo of my Lecturer, Colleen" style = "width: 100%;">
+		</div>
+		<div class = 'flex-column' id = "centered">
+			<img src = 'images/UMSI-logo.jpg' alt = "the UMSI logo" style = "width: 100%;">
+		</div>
+	</div>
+	<button onclick="disappear()" style = "margin: 15px auto;">Hide Image</button>
+	<button onclick="appear()" style = "margin: 15px auto;">Show Image</button>
+
+
+ </body>
+ </html>

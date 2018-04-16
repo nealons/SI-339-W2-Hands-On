@@ -1,0 +1,61 @@
+body{
+	background-image: url("../images/small_steps.png");
+	background-repeat: repeat;
+}
+
+#centered{
+	margin: 0 auto;
+}
+
+
+.flex-row{
+	display: flex;
+	flex-wrap: wrap;
+	vertical-align: center;
+	margin-left: -8px;
+}
+.flex-column{
+	flex: 45%;
+	max-width:45%;
+	vertical-align: middle;
+}
+
+.flex-column img {
+	vertical-align: middle;
+	border-style: solid;
+	border-width: 5px;
+	border-color: silver;
+	padding: 5%;
+
+}
+
+@media only screen and (min-width: 650px) {
+.flex-column{
+	flex: 45%;
+	max-width: 45%;
+}
+
+.flex-row{
+	display: flex;
+	flex-wrap: wrap;
+	vertical-align: center;
+	margin-left: -8px;
+	margin-right: -2px;
+}}
+
+
+@media only screen and (min-width: 1000px) {
+.flex-column{	
+	flex: 45%;
+	max-width: 45%;
+	justify-content: center;
+
+}
+
+.flex-row{
+	display: flex;
+	flex-wrap: wrap;
+	vertical-align: center;
+	margin-left: -8px;
+	margin-right:-4px;
+}}
